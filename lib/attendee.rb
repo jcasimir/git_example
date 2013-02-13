@@ -8,4 +8,8 @@ class Attendee
     @last_name    = input[:last_name]
     @phone_number = PhoneNumber.new(input[:phone_number]).to_s
   end
+
+  def caps_last_name
+    last_name.upcase
+  end
 end
